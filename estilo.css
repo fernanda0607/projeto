@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+.barra{
+    background-color: rgb(138, 137, 133);
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 1300px;
+}
+.barra a{
+    float: left;
+    color: rgb(240, 255, 27);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+    text-decoration: none;
+}
+.barra a:hover{
+    background-color: rgb(240, 255, 27);
+	  font-weight: bold;
+    color: rgb(5, 5, 5);
+}
+.form{
+    background-color: black;
+    color:white;
+    width: 1300px;
+}
+.grupo {
+    display: flex;    flex-direction: row;
+}
+.grupo label{
+    flex: none;       display: block;
+    width: 120px;     font-weight: bold;
+    font-size: 14px;  margin-top: 5px;
+}
+.grupo #aluno{
+  margin-top:10px;
+  padding-top: 0;
+}
+.grupo label.recuo{
+    text-align: right;    padding-right: 8px;
+    padding-left: 10px;   width: auto;
+}
+.grupo .maior{
+    display: block;
+    margin-bottom: 10px;  margin-right: 8px;
+    padding: 4px; 
+    width: 720px;        
+}
+.grupo .medio{ 
+  margin-bottom: 10px;  margin-right: 8px;
+  padding: 4px; 
+  width: 220px;        
+}
+.grupo .menor{ 
+  margin-bottom: 10px;  margin-right: 8px;
+  padding: 4px; 
+  width: 180px;        
+}
+.aviso{
+  flex: none;       display: block;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(172, 31, 31, 0.938);
+  text-align: center;    padding-right: 8px;
+  padding-left: 10px;   width: auto;
+}
+button{
+    color: #f8fafc;
+    background-color: #5b5d5f;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    min-width: 100px;
+}
+button:hover{
+  background-color: rgb(240, 255, 27);
+  font-weight: bold;
+  color: rgb(5, 5, 5);
+}
+.grupo #tabelaPreco{
+  color:  #3b3c3d;
+  background-color:#81c7e2;
+  margin-top: 0;
+  height: 35px;
+}
+
+/*estilo da tabela do site //divtable.com/table-styler/ */
+table.purpleHorizon {
+  border: 4px solid black;
+  background-color: #B3B3B3;
+  width: 100%; /* alterado manualmente*/
+  height: 100px; /* alterado manualmente*/
+  text-align: center;
+  border-collapse: collapse;
+}
+table.purpleHorizon caption{
+    padding-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    background: white;
+	color:red;
+  }
+table.purpleHorizon td, table.purpleHorizon th {
+  border: 1px solid #555555;
+  padding: 5px 2px;
+  
+}
+table.purpleHorizon tbody td {
+  font-size: 13px;
+  font-weight: bold;
+  color: #000000;
+}
+table.purpleHorizon tr:nth-child(even) {
+  background: #F5FC71;
+ 
+}
+table.purpleHorizon thead {
+  background: black;
+  border-bottom: 4px solid black;
+}
+table.purpleHorizon thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid black;
+}
+table.purpleHorizon thead th:first-child {
+  border-left: none;
+}
+
+table.purpleHorizon tfoot {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #FFE30A;
+  background: -moz-linear-gradient(top, #ffea47 0%, #ffe522 66%, #FFE30A 100%);
+  background: -webkit-linear-gradient(top, #ffea47 0%, #ffe522 66%, #FFE30A 100%);
+  background: linear-gradient(to bottom, #ffea47 0%, #ffe522 66%, #FFE30A 100%);
+  border-top: 5px solid #792396;
+}
+table.purpleHorizon tfoot td {
+  font-size: 15px;
+  
+}
+table.purpleHorizon tfoot .links {
+  text-align: right;
+}
+table.purpleHorizon tfoot .links a{
+  display: inline-block;
+  background: #792396;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros Usados - Sebo</title>
+    <link href="estilo.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="barra">
+          <a href="/livro.html">Venda de Livros Usados</a>
+     </div>
+    <div class="form">
+        <form name="frmLivro">
+            <fieldset>
+                 <div class="grupo">
+                    <label class="recuo">Código</label>
+                    <input class="menor" type="number" size="5" id="codigo" />
+					
+					<label class="recuo">Título</label>
+                    <input class="maior" type="text" size="65" id="titulo" />                    
+                </div>   
+				
+                <div class="grupo">
+					<input type="checkbox" id="aluno">
+					<label class="menor" for="labelAluno">É Aluno do CEUNSP?</label>	
+										
+					<label class="recuo">Editora</label>
+                    <input class="medio" type="text" size="65" id="editora" />
+					
+					<label class="recuo">Ano Lançamto</label>
+                    <select class="menor" id="ano">
+                        <option value="ano0"></option>
+                        <option value="ano1">Anterior à 2000</option>
+                        <option value="ano2">2001 - 2010</option>
+                        <option value="ano3">2011 - 2020</option>
+                    </select>
+				</div>
+				
+                <div class="grupo">
+                    <label class="recuo">Valor</label>
+                    <input class="medio" type="number" size="10" id="valor" disabled/>
+
+                    <label class="recuo">Total à Pagar</label>
+                    <input class="medio" type="number" size="10" id="total" disabled/> 
+					
+					<button id="tabelaPreco">Tabela de Preços</button>
+					
+                </div>
+				
+                <div class="grupo">
+                    <label></label>
+                    <button id="comprar">Finalizar Compra</button>
+                    <button id="cancelar">Cancelar</button>
+                </div>
+				
+                <div class="aviso">
+                    <label style="color:rgba(172, 31, 31, 0.938)"> ** Os Alunos do CEUNSP terão 10% de Desconto!**</label>
+                </div>
+				
+            </fieldset>
+        </form>
+        <div id="listCompras"></div>
+</div>
+
+<script src="livro.js"></script>
+</body>
+</html>
